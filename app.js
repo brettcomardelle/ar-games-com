@@ -3,7 +3,7 @@ const app = express();
 const port = process.env.PORT;
 
 app.get("/", (req, res) => {
-  res.sendFile('index.html', { root: __dirname + "/relative_path_of_file" } );
+  res.sendFile(path.join(__dirname + '/index.html'));
 });
 // app.use('/', express.static('app', {index: "index.html"}));
 
