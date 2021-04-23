@@ -1,0 +1,19 @@
+{
+  "name": "arclue",
+  "version": "1.0.0",
+  "description": "AR Games",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brettcomardelle/ar-games-com.git"
+  },
+  "author": "Brett Comardelle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brettcomardelle/ar-games-com/issues"
+  },
+  "homepage": "https://github.com/brettcomardelle/ar-games-com#readme"
+}
