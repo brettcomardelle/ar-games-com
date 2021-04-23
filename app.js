@@ -1,12 +1,11 @@
-const http = require('http');
+const express = require("express");
+const app = express();
 const port = process.env.PORT;
 
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end("/clue.html");
+app.get("/", (req, res) => {
+  res.send("Hello, world");
 });
 
-server.listen(port, () => {
-  console.log("Server running");
+app.listen(port, () => {
+  console.log("App is listening")
 });
