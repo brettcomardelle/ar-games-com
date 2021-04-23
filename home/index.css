@@ -1,0 +1,15 @@
+body {
+    background-color: whitesmoke;
+}
+
+#container-fluid-header {
+    background-color: darkslategrey;
+    height: 10%;
+}
+
+#header-title {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 4em;
+    padding-top: 55px;
+}
