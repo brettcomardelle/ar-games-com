@@ -1,16 +1,14 @@
-// var http = require('http');
-var express = require("express");
+const http = require('http');
 
-var app = express();
+const hostname = '127.0.0.1';
+const port = 3000;
 
-app.set('port', process.env.PORT || 3000);
-app.use(express.logger());
-
-app.get('/', function(request, response) {
-  console.log('[support dash] processing get request')
-  response.send('Hello World 2!');
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('Hello World');
 });
 
-app.listen(process.env.PORT, function () {
-  console.log('***** exp listening on port: ' + process.env.PORT);
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
 });
