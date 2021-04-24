@@ -6,15 +6,15 @@
     <body style="margin : 0px; overflow: hidden;">
         <a-scene embedded arjs>
             <a-assets>
-                <a-asset-item id="glb-asset" src="/donut/Donut.glb"></a-asset-item>
+                <a-asset-item id="glb-asset" src="/wolf/Wolf-Blender-2.82a.gltf"></a-asset-item>
             </a-assets>
         <a-marker preset="hiro">
             <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
-            <a-gltf-model
+            <a-entity
                 position="0 -1 -3"
-                scale="0.5 0.5 0.5"
+                scale="1 1 1"
                 gltf-model="#glb-asset"
-            ></a-gltf-model>
+            ></a-entity>
         </a-marker>
         <a-entity camera></a-entity>
         </a-scene>
